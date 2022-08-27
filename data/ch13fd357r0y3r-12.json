@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "ch13fd357r0y3r",
+  "address": "0xba23dfd7cccd3587a1b8909dd5bccfd92aceae6f",
+  "risk": "3",
+  "title": "Multiple call by same user to beat() function will sweep the reward token balance of heart contract.",
+  "issueId": 12,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/12"
+}
