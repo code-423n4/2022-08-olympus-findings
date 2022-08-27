@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "ch13fd357r0y3r",
+  "address": "0xba23dfd7cccd3587a1b8909dd5bccfd92aceae6f",
+  "risk": "3",
+  "title": "No access control on beat() function ",
+  "issueId": 13,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/13"
+}
