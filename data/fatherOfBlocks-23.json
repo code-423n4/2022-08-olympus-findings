@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "fatherOfBlocks",
+  "address": "0xd5a2686b02a15b5269848dee6e913f07f459782e",
+  "risk": "2",
+  "title": "gap in the two validations of thresholdFactor",
+  "issueId": 23,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/23"
+}
