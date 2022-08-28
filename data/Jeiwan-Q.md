@@ -39,3 +39,9 @@
     > If the value is too small, the market will not be able function normally and close prematurely.
 
     However, there's no minimal value check in the above functions.
+
+- **Finding**: Unused function
+    **Severity:** QA
+    **Description:**
+    `fromRole` in `KernelUtils.sol` is not used:
+    - https://github.com/code-423n4/2022-08-olympus/blob/main/src/utils/KernelUtils.sol#L26
