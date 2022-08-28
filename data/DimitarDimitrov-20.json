@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "DimitarDimitrov",
+  "address": "0x6e8cd81029361d213b8d2d5b2d2064384618fd1f",
+  "risk": "3",
+  "title": "ERC20 token balance of contract may vary",
+  "issueId": 20,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/20"
+}
