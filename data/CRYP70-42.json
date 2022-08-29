@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "CRYP70",
+  "address": "0xd40c80da31dcf061fa66ffbbd981bfecd5885af6",
+  "risk": "2",
+  "title": "Governance Does Not Handle the Return Value of Tokens Which May Cause a Contradiction",
+  "issueId": 42,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/42"
+}
