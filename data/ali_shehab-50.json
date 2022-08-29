@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "ali_shehab",
+  "address": "0xcaa959513b90574c625e11230b030b4a7d0dfb0e",
+  "risk": "2",
+  "title": "Executor can change the admin then call the admin functions",
+  "issueId": 50,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/50"
+}
