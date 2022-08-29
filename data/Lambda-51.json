@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "Lambda",
+  "address": "0xefc711b22f4fdbcbc221ac7c116e90c699d0b708",
+  "risk": "2",
+  "title": "Unexecutable proposals when Actions.MigrateKernel is not last instruction",
+  "issueId": 51,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/51"
+}
