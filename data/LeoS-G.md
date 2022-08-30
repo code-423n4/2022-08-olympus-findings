@@ -54,7 +54,30 @@ With those changes, these evolutions in gas average report can be observe:
     OlympusHeart: Deployment: 934119 -> 932719 (-1400)
     OlympusHeart: beat: 29228 -> 29221 (-7)
 
-## [G-05] Unnecessary public constant
+## [G-05] Some operations can be marked unchecked
+If an operation can't overflow, it is cheaper to mark it as unchecked to avoid the automatic check of overflow.
+In this case:
+
+    while  (price_ >=  10)  {
+		price_ = price_ /  10;
+		decimals++;
+	}
+The operation can't overflow or undeflow
+
+1 instances
+ - https://github.com/code-423n4/2022-08-olympus/blob/main/src/policies/Operator.sol#L486-L489
+
+
+Consider marking it unchecked
+
+With this changes, these evolutions in gas average report can be observe:
+
+    Operator: Deployment: 4679925 -> 4670317 (-9608)
+    Operator: operate: 122263 -> 121936 (-327)
+
+This part can already be subjected to two improvements, however this one is still largely ineffective, especially for large numbers up to 2^256. It would be very useful to import a log10 function from an external mathematical library. The gain can be very important.
+
+## [G-06] Unnecessary public constant
 Declaring a private constant is cheaper than a public one. In some case, a constant can be declared as private to save gas. It is the case if the constant don't need to be called outside the contract. A user could still read the value directly in the code instead of calling it, if needed.
 
 8 instances:
@@ -105,7 +128,7 @@ With those changes, these evolutions in gas average report can be observe:
     Operator: swap: 54322 -> 54342 (+20)
     Operator: toggleActive: 7460 -> 7482 (+22)
 
-## [G-06] Using `storage` instead of `memory`  can be cheaper.
+## [G-07] Using `storage` instead of `memory`  can be cheaper.
 
 A `storage` structure is pre allocated by the contract, by contrast, a `memory` one is newly created. Depending on the case both can be used to optimize the gas cost because simply, a `storage` is cheaper to create but more expensive to read from and to return and a `memory` on the other hand is more expensive to create but cheaper to read from and to return. We can optimize with trials and errors instead of complex calculations (which will probably work a bit better, but it's not done here).
 
@@ -138,7 +161,7 @@ With these changes, these evolutions in gas average report can be observed:
 
 
 
-## [G-07] Using `calldata` instead of `memory` for read only argument in external function
+## [G-08] Using `calldata` instead of `memory` for read only argument in external function
 If a function parameter is read only, it is cheaper in gas to use `calldata` instead of `memory`.
 
 4 instances:
@@ -160,7 +183,7 @@ With these changes, these evolutions in gas average report can be observed:
     TreasuryCustodian: revokePolicyApprovals: 6956 -> 6842 (-114)
 
 # Medium effect in use
-## [G-08] `external` function for the admin can be marked as `payable`
+## [G-09] `external` function for the admin can be marked as `payable`
 
 If a function is guaranteed to revert when called by a normal user, this function can be marked as `payable` to avoid the check to know if a payment is provided.
 
@@ -174,7 +197,7 @@ Consider adding `payable` keyword.
 
 # High effect on readability
 
-## [G-09] Optimise function name
+## [G-10] Optimise function name
 Every function have a keccak256 hash, this hash defines the order of the function in the contract. The best the ranking, the minimum the gas usage to access the function. Each time a function is called, the EVM need to pass through all the functions better ranked (going through a function cost 22 gas), and this operation cost gas. This can be optimized, the ranking is defined by the first four bytes of the kekkack256 hash of the function name. The name can be changed to improve the ranking, which greatly impacts the readability. That's why it's not practical to change all the names, but it's possible to change only the ones of the functions called a lot of times. This change can be done on the following functions according to their number of uses in the tests and their current ranking.
 
 1. `Kernel.sol`: f166d9eb - `modulePermissions(bytes5,address,bytes4)`
