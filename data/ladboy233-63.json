@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "ladboy233",
+  "address": "0xe1faaeb0d29c9cf411cbd47daab14a21ebe266a4",
+  "risk": "2",
+  "title": "the VOTES.balanceOf(msg.sender) of voting token counting can be not reliable when checking if the proposal is eligible to be submited because voting token total supply can be deflated or inflated.",
+  "issueId": 63,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/63"
+}
