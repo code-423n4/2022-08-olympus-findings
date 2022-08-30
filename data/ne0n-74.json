@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "ne0n",
+  "address": "0x231bb4f4c7128789daf5b1c68bdda2b6a40a69c8",
+  "risk": "2",
+  "title": "Executor can change Admin address resulting in making himself Admin",
+  "issueId": 74,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/74"
+}
