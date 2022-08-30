@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "rvierdiiev",
+  "address": "0x1a5adee23ffbdef58d41c1addac2521ca600b950",
+  "risk": "2",
+  "title": "Heart::beat() could be called several times in one block if no one called it for a some time",
+  "issueId": 79,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/79"
+}
