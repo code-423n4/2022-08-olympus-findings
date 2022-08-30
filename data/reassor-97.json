@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "reassor",
+  "address": "0xd822554abe37b52e34d0c599ec828dc8c46721ff",
+  "risk": "2",
+  "title": "Anyone can call policies configureDependencies",
+  "issueId": 97,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/97"
+}
