@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "datapunk",
+  "address": "0x13d75851Ba4BC661c8d0e10B7f51bBf95A3e448e",
+  "risk": "3",
+  "title": "updating Moving Average failed to account for cases where pricefeed does not provide updated anser due to small changes",
+  "issueId": 109,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/109"
+}
