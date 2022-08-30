@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "Trust",
+  "address": "0x2FCa32d86D133394f6548028A31b95ADF3cC5Efc",
+  "risk": "2",
+  "title": "Protocol heart may stop beating due to dependecy on oracle",
+  "issueId": 86,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/86"
+}
