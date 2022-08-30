@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "Trust",
+  "address": "0x2FCa32d86D133394f6548028A31b95ADF3cC5Efc",
+  "risk": "3",
+  "title": "It's possible to steal votes between proposals",
+  "issueId": 85,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/85"
+}
