@@ -1,4 +1,8 @@
+# Executor can change Admin address resulting in making himself Admin
+
 In contract `Kernel` described in file ***"src/Kernel.sol"***, there exists a function `executeAction` which executes action like module install, upgrade, policy related actions etc. This function can also modify the ***executor*** and ***admin*** addresses. This function is protected by `onlyExecutor` modifier and **not** `onlyAdmin` modifier which could result in ***executor*** modifying ***admin*** address.
+
+This could lead to ***executor*** making himself ***admin*** and calling the `grantRole` and `revokeRole` functions.
 
 Line of Code:
 [Function Definition] (https://github.com/code-423n4/2022-08-olympus/blob/main/src/Kernel.sol#L235)
