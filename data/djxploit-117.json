@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "djxploit",
+  "address": "0x2635bbab233b9a1cd7703e6c4b80fe39055971d6",
+  "risk": "2",
+  "title": "Solmate safetransfer and safetransferfrom doesnot check the codesize of the token address, which may lead to fund loss",
+  "issueId": 117,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/117"
+}
