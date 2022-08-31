@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "berndartmueller",
+  "address": "0x6a897b32996d342535791a74b8a40e75ddf2486e",
+  "risk": "3",
+  "title": "Treasury withdrawal approvals can be front-run",
+  "issueId": 142,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/142"
+}
