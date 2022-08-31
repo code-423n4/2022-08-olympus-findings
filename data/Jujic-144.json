@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "Jujic",
+  "address": "0x6e1da38f9d9d87ce228234a570d992d4db294fa1",
+  "risk": "2",
+  "title": "OlympusGovernance voting contract Is Not Equipped To Handle On-Chain Voting",
+  "issueId": 144,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/144"
+}
