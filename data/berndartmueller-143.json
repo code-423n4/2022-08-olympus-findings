@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "berndartmueller",
+  "address": "0x6a897b32996d342535791a74b8a40e75ddf2486e",
+  "risk": "2",
+  "title": "Users with locked votes can not endorse new proposals",
+  "issueId": 143,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/143"
+}
