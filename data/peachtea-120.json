@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "peachtea",
+  "address": "0x9b27713304453913eb4d2bc3eda5c5286d57aec7",
+  "risk": "2",
+  "title": "latestRoundData() does not verify `answeredInRound` to ensure oracle data freshness",
+  "issueId": 120,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/120"
+}
