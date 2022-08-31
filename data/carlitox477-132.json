@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "carlitox477",
+  "address": "0x19a7407430a31a81df83f54b66805402577fadd3",
+  "risk": "2",
+  "title": "OlympusGovernance#executeProposal: reentrancy attack vulnerable function",
+  "issueId": 132,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/132"
+}
