@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "0xSmartContract",
+  "address": "0x1c9eadb67e158ac831c3922ea17e370a99bcc8f4",
+  "risk": "3",
+  "title": "If ```Executor``` and ```Kernel``` are not the same address for ```msg.sender```, the ```executeAction``` function will revert",
+  "issueId": 176,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/176"
+}
