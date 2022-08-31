@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "itsmeSTYJ",
+  "address": "0xbca294543b46ff11cfafbcf67434bea23c21404b",
+  "risk": "2",
+  "title": "Using a single oracle for price is not recommended",
+  "issueId": 121,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/121"
+}
