@@ -273,9 +273,42 @@ src/policies/Operator.sol:419:            uint256 invCushionPrice = 10**(oracleD
 src/policies/Operator.sol:420:            uint256 invWallPrice = 10**(oracleDecimals * 2) / range.wall.low.price;
 src/policies/Operator.sol:786:                ) * (FACTOR_SCALE + RANGE.spread(true) * 2)) /
 ```
+-----
 
 ### References:
 
 [https://code4rena.com/reports/2022-04-badger-citadel/#g-32-shift-right-instead-of-dividing-by-2](https://code4rena.com/reports/2022-04-badger-citadel/#g-32-shift-right-instead-of-dividing-by-2)
 
+## 10. Inline a modifier that’s only used once
 
+As onlyGovernor() is only used once in this contract (in function executeAction()), it should get inlined to save gas:
+
+### Instances
+[Kernel.sol:L223](https://github.com/code-423n4/2022-08-olympus/tree/main/src/Kernel.sol#L223)
+```
+src/Kernel.sol:223:    modifier onlyExecutor() {
+
+```
+ 
+[Kernel.sol:L235](https://github.com/code-423n4/2022-08-olympus/tree/main/src/Kernel.sol#L235)
+```
+src/Kernel.sol:235:    function executeAction(Actions action_, address target_) external onlyExecutor {
+```
+
+----
+
+## 11. Bytes constants are more efficient than string constants
+
+From the Solidity doc:
+If you can limit the length to a certain number of bytes, always use one of bytes1 to bytes32 because they are much cheaper.
+Why do Solidity examples use bytes32 type instead of string?
+bytes32 uses less gas because it fits in a single word of the EVM, and string is a dynamically sized-type which has current limitations in Solidity (such as can’t be returned from a function to a contract).
+If data can fit into 32 bytes, then you should use bytes32 datatype rather than bytes or strings as it is cheaper in solidity. Basically, any fixed size variable in solidity is cheaper than variable size. That will save gas on the contract.
+
+Instances of string constant that can be replaced by bytes(1..32) constant :
+[Governance.sol:L41](https://github.com/code-423n4/2022-08-olympus/tree/main/policies/Governance.sol#L41)
+[Governance.sol:L162](https://github.com/code-423n4/2022-08-olympus/tree/main/policies/Governance.sol#L162)
+```
+policies/Governance.sol:41:    string proposalURI;
+policies/Governance.sol:162:        string memory proposalURI_
+```
