@@ -140,3 +140,32 @@ Use directly variable
 
 **Recommendation:**
 Use temporary TODOs as you work on a feature, but make sure to treat them before merging. Either add a link to a proper issue in your TODO, or remove it from the code.
+
+
+## L-7. Incorrect NatSpec Mapping comment
+
+**Context:**
+[Kernel.sol#L180](https://github.com/code-423n4/2022-08-olympus/blob/main/src/Kernel.sol#L180)
+
+**Description:**
+Mapping and its Natspec comments show different Key Value positions
+
+
+**Recommendation:**
+
+Kernel.sol#L180 
+```js
+
+ /// @dev    Policy -> Keycode -> Function Selector -> bool for permission
+    mapping(Keycode => mapping(Policy => mapping(bytes4 => bool))) public modulePermissions;
+
+```
+Recomendation code:
+
+```js
+
+ /// @dev Keycode -> Policy -> Function Selector -> bool for permission
+    mapping(Keycode => mapping(Policy => mapping(bytes4 => bool))) public modulePermissions;
+
+```
+
