@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "Amithuddar",
+  "address": "0x84d669eaf07d8e42e153d277fdba94e319571b75",
+  "risk": "2",
+  "title": "transferFrom() method is used instead of safeTransferFrom(),",
+  "issueId": 409,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/409"
+}
