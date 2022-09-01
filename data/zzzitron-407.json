@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "zzzitron",
+  "address": "0x50B6d717429F56527676d2431aAA5b3f0FA26a93",
+  "risk": "2",
+  "title": "VoteRegistration: revokeVotesFrom can be avoided",
+  "issueId": 407,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/407"
+}
