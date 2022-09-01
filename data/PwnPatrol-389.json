@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "PwnPatrol",
+  "address": "0x92100Ef14c79DebbaB331AFb994FA18AC6F2E82D",
+  "risk": "3",
+  "title": "TRSRY:getLoan() is permissioned, but no policy has permission to call it",
+  "issueId": 389,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/389"
+}
