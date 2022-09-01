@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "Guardian",
+  "address": "0x5156B0072568905Afd2f57fc1f4c0De48FA86BF3",
+  "risk": "2",
+  "title": "Missing Oracle Response Checks",
+  "issueId": 187,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/187"
+}
