@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "ajtra",
+  "address": "0x566f8a91a57d915c44f66cc3ee715b657455c095",
+  "risk": "2",
+  "title": "Not calling approve(0) before setting a new approval might cause reverts when used with Tether (USDT)",
+  "issueId": 369,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/369"
+}
