@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "Ruhum",
+  "address": "0x1708bdfa333f81993a1edcfec6821a3ec563ea06",
+  "risk": "2",
+  "title": "Modules with external dependencies can't be easily upgraded",
+  "issueId": 224,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/224"
+}
