@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "Dravee",
+  "address": "0x319dcd0306908ce08ffa6f5e5b6b6a4ff8ccb9de",
+  "risk": "2",
+  "title": "Chainlink's `latestRoundData` might return stale or incorrect results",
+  "issueId": 328,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/328"
+}
