@@ -5,6 +5,14 @@ Low Risk Findings:
 https://github.com/code-423n4/2022-08-olympus/blob/main/src/Kernel.sol#L251
 https://github.com/code-423n4/2022-08-olympus/blob/main/src/Kernel.sol#L253
 
+2. Unused internal functions:
+
+https://github.com/code-423n4/2022-08-olympus/blob/main/src/Kernel.sol#L131
+https://github.com/code-423n4/2022-08-olympus/blob/main/src/utils/KernelUtils.sol#L16
+https://github.com/code-423n4/2022-08-olympus/blob/main/src/utils/KernelUtils.sol#L26
+https://github.com/code-423n4/2022-08-olympus/blob/main/src/utils/KernelUtils.sol#L11
+https://github.com/code-423n4/2022-08-olympus/blob/main/src/utils/KernelUtils.sol#L21
+
 Non-Critical Findings:
 
 1. use only uppercase letters for constant variables
