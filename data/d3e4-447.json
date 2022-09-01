@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "d3e4",
+  "address": "0xaf9b8098424c31151749638f8258b3376cfdc04f",
+  "risk": "3",
+  "title": "[`_movingAverage`](https://github.com/code-423n4/2022-08-olympus/blob/b5e139d732eb4c07102f149fb9426d356af617aa/src/modules/PRICE.sol#L36)  may drift",
+  "issueId": 447,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/447"
+}
