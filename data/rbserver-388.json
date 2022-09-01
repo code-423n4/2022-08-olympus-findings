@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "rbserver",
+  "address": "0x4bd9605a3e546f3400df2c2be7b1c775aeea56bd",
+  "risk": "2",
+  "title": "Chainlink oracle data feeds are not sufficiently validated and can return stale answers",
+  "issueId": 388,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/388"
+}
