@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "pedroais",
+  "address": "0x7b13eb3f49525dcf09c01dbbbd34af8a4c8c83b5",
+  "risk": "3",
+  "title": "Race condition produces DDOS on governance  :  20% minority can block the other 80% from passing a proposal. ",
+  "issueId": 465,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/465"
+}
