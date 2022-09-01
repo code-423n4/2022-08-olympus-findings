@@ -37,4 +37,6 @@ if (debtBuffer_ > uint32(100_000) || debtBuffer_ < uint32(10_000)) revert Operat
 ## Validity check for cushionFactor should be included in the constructor of OPERATOR.sol
 The constructor did not check whether or not the first elements of configParams is valid. Although it could be set later in function setCushionFactor just like all other params, the following code line should be inserted at line 102 or anywhere deemed appropriate in the constructor:
 
+```
 if (configParams[0] > 10000 || configParams[0]< 100) revert Operator_InvalidParams();
+```
