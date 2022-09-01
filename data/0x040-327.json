@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "0x040",
+  "address": "0x9ffe748b70c96f2c0ba70ac183a272e63cda0029",
+  "risk": "Q",
+  "title": "QA Report",
+  "issueId": 327,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/327"
+}
