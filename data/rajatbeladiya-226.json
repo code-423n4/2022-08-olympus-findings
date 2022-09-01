@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "rajatbeladiya",
+  "address": "0x6840a08b4e51cd863bbe6c902b60c59dbca85f97",
+  "risk": "2",
+  "title": "`ExecuteProposal` throws `Underflow Error`",
+  "issueId": 226,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/226"
+}
