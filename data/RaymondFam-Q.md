@@ -23,3 +23,18 @@ numbe is missing an "r"
         _scaleFactor = 10**exponent;
 ```
 Note: Variable `decimals` at line 59 cannot be deleted since it's being called/referenced by Operator.sol.
+## Additional condition for cushionDebtBuffer
+The if condition for cushionDebtBuffer should ensure the input parameter should not exceed 100% (percent with 3 decimals, i.e. 100_000 = 100 %) just like it has been included for reserveFactor. Hence, the following two code lines  should be refactored as follows:
+
+`OPERATOR.sol` [Line 106](https://github.com/code-423n4/2022-08-olympus/blob/main/src/policies/Operator.sol#L106)
+```
+if ( configParams[2] > uint32(100_000) || [2] < uint32(10_000)) revert Operator_InvalidParams();
+```
+`OPERATOR.sol` [Line 535](https://github.com/code-423n4/2022-08-olympus/blob/main/src/policies/Operator.sol#L535)
+```
+if (debtBuffer_ > uint32(100_000) || debtBuffer_ < uint32(10_000)) revert Operator_InvalidParams();
+```
+## Validity check for cushionFactor should be included in the constructor of OPERATOR.sol
+The constructor did not check whether or not the first elements of configParams is valid. Although it could be set later in function setCushionFactor just like all other params, the following code line should be inserted at line 102 or anywhere deemed appropriate in the constructor:
+
+if (configParams[0] > 10000 || configParams[0]< 100) revert Operator_InvalidParams();
