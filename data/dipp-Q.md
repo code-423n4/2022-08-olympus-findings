@@ -10,7 +10,7 @@ The ```resetBeat``` function in ```Heart.sol``` may be used to decrease the ```l
 
 ## Impact
 
-Callers of the ```beat``` function will lose out on rewards.
+The ```beat``` function will not be called as frequently and callers of the ```beat``` function will lose out on rewards.
 
 ## Proof of Concept
 
@@ -139,7 +139,7 @@ The function checks that an amount of quote tokens has been sent by checking tha
 
 ## Impact
 
-If, on the teller's side,  the ```inputAmount``` and ```outputAmount``` sent to the ```callback``` function is fully user controlled then may receive more funds from than what they are owed. The funds loss would be limited to the capacity of the market.
+If, on the teller's side,  the ```inputAmount``` and ```outputAmount``` sent to the ```callback``` function is fully user controlled then they may receive more funds than what they are owed. The funds loss would be limited to the capacity of the market.
 
 Exploitability is not very likely since the whitelisted teller function would need to have vulnerable code which would allow a malicious user to call ```callback``` with 0 ```inputAmount``` and non-zero ```outputAmount```. 
 
