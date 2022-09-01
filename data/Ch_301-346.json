@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "Ch_301",
+  "address": "0x8040fd7b86966bd49e1b721d2ed264180aa15814",
+  "risk": "2",
+  "title": "You can’t check if a proposal has Enough Votes To Execute",
+  "issueId": 346,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/346"
+}
