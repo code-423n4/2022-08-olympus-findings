@@ -1,5 +1,5 @@
 ### Gas Optimizations List
-| Number | Optimizations Detail | Per gas saved | Context |
+| Number | Optimization Details | Per gas saved | Context |
 |:--:|:-------| :-----:| :-----:|
 | 1 | Sort Solidity operations using ```short-circuit``` mode | 2111 | 2 |
 | 2 |  Update on ```repayLoan``` function for gas earnings | ~1000 | 1 |
@@ -258,7 +258,7 @@ OpenZeppelin uint256 and bool comparison :
 Booleans are more expensive than uint256 or any type that takes up a full word because each write operation emits an extra SLOAD to first read the slot's contents, replace the bits taken up by the boolean, and then write back. This is the compiler's defense against contract upgrades and pointer aliasing, and it cannot be disabled.The values being non-zero value makes deployment a bit more expensive.
 
 **Recommendation:**
-Use  uint256(1) ve uint256(2) instead of bool
+Use  uint256(1) and uint256(2) instead of bool
 
 **Proof Of Concept:**
 The optimizer was turned on and set to 10000 runs
@@ -723,7 +723,7 @@ contract Contract2  {
 If a function modifier or require such as onlyOwner-admin is used, the function will revert if a normal user tries to pay the function. Marking the function as payable will lower the gas cost for legitimate callers because the compiler will not include checks for whether a payment was provided. The extra opcodes avoided are CALLVALUE(2), DUP1(3), ISZERO(3), PUSH2(3), JUMPI(10), PUSH1(3), DUP1(3), REVERT(0), JUMPDEST(1), POP(2), which costs an average of about 24 gas per call to the function, in addition to the extra deployment cost
 
 **Recommendation:**
-Functions guaranteed to revert when called by normal users can be marked payable  (for only ```onlyowner or admin``` functions)
+Functions guaranteed to revert when called by normal users can be marked payable  (for only ```onlyowner``` or ```admin``` functions)
 
 **Proof Of Concept:**
 The optimizer was turned on and set to 10000 runs
@@ -1374,10 +1374,13 @@ contract Contract1 {
 
 #  Suggestions:
 ## S-1 ```revokeRole``` function has unnecessary check
+
 **Context:**
 [Kernel.sol#L452](https://github.com/code-423n4/2022-08-olympus/blob/main/src/Kernel.sol#L452)
+
 **Description:**
-```revokeRole``` function has two ```if``` blocks. First ‘if’ block  is checked to ```!isRole``` mapping and it is checked to ```hasRole``` mapping,  however second ``ìf``` block include to first and it is redundant
+```revokeRole``` function has two ```if``` blocks. First ‘if’ block  is checked to ```!isRole``` mapping and it is checked to ```hasRole``` mapping,  however second ```ìf``` block include to first and it is redundant
+
 **Proof Of Concept:**
 Kernel.sol#L452 
 ```js
@@ -1398,11 +1401,14 @@ function revokeRole(Role role_, address addr_) public onlyAdmin {
 ```
 
 ## S-2. Packing Structs
+
 **Context:**
 [Governance.sol#L44-L47](https://github.com/code-423n4/2022-08-olympus/blob/main/src/policies/Governance.sol#L44-L47)
 [IBondAuctioneer.sol#L44-L57](https://github.com/code-423n4/2022-08-olympus/blob/main/src/interfaces/IBondAuctioneer.sol#L44-L57)
+
 **Description:**
-A common gas optimization is “packing structs” or “packing storage slots”. This is the action of using smaller types like uint128 and uint96 next to each other in contract storage. When values are read or written in contract storage a full 256 bits are read or written. So if you can pack multiple variables within one 256 bit storage slot then you are cutting the cost to read or write those storage variables in half or more.
+A common gas optimization is “packing structs” or “packing storage slots”. This is the action of using smaller types like ```uint128``` and ```uint96``` next to each other in contract storage. When values are read or written in contract storage a full 256 bits are read or written. So if you can pack multiple variables within one 256 bit storage slot then you are cutting the cost to read or write those storage variables in half or more.
+
 **Current Code:**
 ```js
 Governance.sol#L44-L47
