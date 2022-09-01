@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "d3e4",
+  "address": "0xaf9b8098424c31151749638f8258b3376cfdc04f",
+  "risk": "2",
+  "title": "The governance system can be held hostage by a malicious user",
+  "issueId": 375,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/375"
+}
