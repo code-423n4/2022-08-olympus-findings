@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "PPrieditis",
+  "address": "0x855eab463c41f6ba5de353c462878d930d7895ea",
+  "risk": "2",
+  "title": "TRSRY.sol function repayLoan() alows only loan owner to repay loan",
+  "issueId": 307,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/307"
+}
