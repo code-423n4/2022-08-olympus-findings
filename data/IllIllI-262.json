@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "IllIllI",
+  "address": "0xCC6B0a35481EA40b60780B7c0294c6c29061038f",
+  "risk": "2",
+  "title": "Oracle data is insufficiently validated",
+  "issueId": 262,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/262"
+}
