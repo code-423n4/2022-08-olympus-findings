@@ -46,7 +46,7 @@ Recommendation  Code:
     }
 ```
 
-# L-2. Add to Blacklist function
+## L-2. Add to Blacklist function
 
 **Description:**
 Cryptocurrency mixing service, Tornado Cash, has been blacklisted in the OFAC.
