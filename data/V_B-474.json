@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "V_B",
+  "address": "0x14cDd1552530AC4C38BF6c4fB31d8822560D15b3",
+  "risk": "3",
+  "title": "Governance functions relies on the proposal Id which says nothing about the proposal content",
+  "issueId": 474,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/474"
+}
