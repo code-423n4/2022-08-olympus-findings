@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "rbserver",
+  "address": "0x4bd9605a3e546f3400df2c2be7b1c775aeea56bd",
+  "risk": "2",
+  "title": "Endorsed votes by a user do not decrease after the user's votes are revoked",
+  "issueId": 257,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/257"
+}
