@@ -18,3 +18,9 @@ Non-Critical Findings:
 1. use only uppercase letters for constant variables
 
 https://github.com/code-423n4/2022-08-olympus/blob/main/src/modules/PRICE.sol#L59
+
+2. Public functions not used internally should be declared external:
+
+https://github.com/code-423n4/2022-08-olympus/blob/main/src/Kernel.sol#L439
+https://github.com/code-423n4/2022-08-olympus/blob/main/src/Kernel.sol#L451
+
