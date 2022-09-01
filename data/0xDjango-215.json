@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "0xDjango",
+  "address": "0x484cdbac8dc9b09e0871baa1802072e3d6bd88aa",
+  "risk": "2",
+  "title": "Policies suffer from unnecessary centralisation risk",
+  "issueId": 215,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/215"
+}
