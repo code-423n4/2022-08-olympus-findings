@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "rbserver",
+  "address": "0x4bd9605a3e546f3400df2c2be7b1c775aeea56bd",
+  "risk": "3",
+  "title": "After EXECUTION_THRESHOLD time is passed, an active proposal can be executed before voting finishes, and the proposal that should fail to pass can be executed",
+  "issueId": 206,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/206"
+}
