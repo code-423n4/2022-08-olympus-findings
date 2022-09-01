@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "pedroais",
+  "address": "0x7b13eb3f49525dcf09c01dbbbd34af8a4c8c83b5",
+  "risk": "2",
+  "title": "Operator role can update a policy without going through the governance / kernel update execution mechanism",
+  "issueId": 490,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/490"
+}
