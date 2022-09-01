@@ -169,3 +169,34 @@ Recomendation code:
 
 ```
 
+## L-8. Incorrect  Custom Error name
+
+**Context:**
+[Kernel.sol#L326](https://github.com/code-423n4/2022-08-olympus/blob/main/src/Kernel.sol#L326)
+
+**Description:**
+Custom Error name and function behavior is different
+
+
+**Recommendation:**
+
+Kernel.sol#L326 
+```js
+function _deactivatePolicy(Policy policy_) internal {
+    if (!policy_.isActive()) revert Kernel_PolicyNotActivated(address(policy_));
+// …
+
+}
+
+```
+Recomendation code:
+
+Contract hasnt this custom Error, so it should be added in Kernel.sol
+
+```js
+
+function _deactivatePolicy(Policy policy_) internal {
+    if (!policy_.isActive()) revert Kernel_PolicyAlreadyDeactive(address(policy_));
+
+```
+
