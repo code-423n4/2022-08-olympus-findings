@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "CertoraInc",
+  "address": "0x09A9af114843218a7446929b1183eBec373B2827",
+  "risk": "2",
+  "title": "Update of the moving average can cause data loss",
+  "issueId": 205,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/205"
+}
