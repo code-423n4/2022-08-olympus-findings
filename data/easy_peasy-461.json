@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "easy_peasy",
+  "address": "0xa2ca2785b1f8d715abd97c4e7a5ae70f4ce4cc28",
+  "risk": "2",
+  "title": "Privilege Escalation",
+  "issueId": 461,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/461"
+}
