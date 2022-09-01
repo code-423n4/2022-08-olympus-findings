@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "zzzitron",
+  "address": "0x50B6d717429F56527676d2431aAA5b3f0FA26a93",
+  "risk": "2",
+  "title": "Governance: users cannot endorse if they voted, which may cause deadlock",
+  "issueId": 414,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/414"
+}
