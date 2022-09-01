@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "0x52",
+  "address": "0x522dffc539c264a8f7e0b91102e899b33f4dabc3",
+  "risk": "2",
+  "title": "Cushion bond markets are opened at wall price rather than current price",
+  "issueId": 485,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/485"
+}
