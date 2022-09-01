@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "hyh",
+  "address": "0x8efE50a4b8c8B64FDC93a5b1712Fd735d8223cD5",
+  "risk": "2",
+  "title": "Moving average precision is lost",
+  "issueId": 483,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/483"
+}
