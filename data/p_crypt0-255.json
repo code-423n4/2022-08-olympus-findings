@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "p_crypt0",
+  "address": "0x1928785e5582d2866b293c96ca8bf0f7a19a1178",
+  "risk": "3",
+  "title": "Permissioned actors can arbitrarily inflate OHM total supply to uint max in MINTR.sol.",
+  "issueId": 255,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/255"
+}
