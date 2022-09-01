@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "Chom",
+  "address": "0xc4c459668fb29833d7dee997d7d347e2634c9cef",
+  "risk": "2",
+  "title": "Kernel may not be able to migrate due to having too many keycodes or policies",
+  "issueId": 433,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/433"
+}
