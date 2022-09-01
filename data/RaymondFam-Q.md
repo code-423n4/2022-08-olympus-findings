@@ -23,4 +23,6 @@ numbe is missing an "r"
  if (reserveEthDecimals > 38) revert Price_InvalidParams();
         _scaleFactor = 10**exponent;
 ```
-With that said, variable `decimals` at line 59 can be deleted. Likewise, variable `ohmEthDecimals`  at line 84 is also deemed removable, with another good side effect of reducing the contract size.
+Variable `ohmEthDecimals`  at line 84 may be removed, with another good side effect of reducing the contract size.
+
+Note: Variable `decimals` at line 59 cannot be deleted since it's being called/referenced by Operator.sol.
