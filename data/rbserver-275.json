@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "rbserver",
+  "address": "0x4bd9605a3e546f3400df2c2be7b1c775aeea56bd",
+  "risk": "2",
+  "title": "Voted votes cannot change after the user are issued with new votes or the user's old votes are revoked during voting",
+  "issueId": 275,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/275"
+}
