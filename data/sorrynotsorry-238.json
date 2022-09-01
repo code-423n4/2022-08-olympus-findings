@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "sorrynotsorry",
+  "address": "0x6262f720679c04cc7f2a14c0c03486d0287c4853",
+  "risk": "2",
+  "title": "setDebt function of TRSRY.sol has no comparison of financial values and sets/erase debts for arbitrary addresses for arbitrary amounts",
+  "issueId": 238,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/238"
+}
