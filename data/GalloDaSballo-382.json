@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "GalloDaSballo",
+  "address": "0x4666e94300429c6d3340449bc828e4218f360672",
+  "risk": "2",
+  "title": "Not being able to vote again may cause voter mistakes",
+  "issueId": 382,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/382"
+}
