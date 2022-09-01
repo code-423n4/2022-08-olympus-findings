@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "ak1",
+  "address": "0xf7a08c2c341bde5e17103d4780d1b465011a2a31",
+  "risk": "3",
+  "title": "Unrestricted access for request permission :Any one can call requestPermissions in Operator.sol, PriceConfig.sol, TreasuryCustodian.sol, VoterRegistration.sol",
+  "issueId": 355,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/355"
+}
