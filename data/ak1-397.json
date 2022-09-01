@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "ak1",
+  "address": "0xf7a08c2c341bde5e17103d4780d1b465011a2a31",
+  "risk": "2",
+  "title": "Inconsistent percentage to set the SUBMISSION_REQUIREMENT and ENDORSEMENT_THRESHOLD, EXECUTION_THRESHOLD",
+  "issueId": 397,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/397"
+}
