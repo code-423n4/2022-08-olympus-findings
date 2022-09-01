@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "enckrish",
+  "address": "0x75652baf9a51acfe1ca0298ac3351d44a5216260",
+  "risk": "2",
+  "title": "Missing checks in `Kernel._deactivatePolicy`",
+  "issueId": 368,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/368"
+}
