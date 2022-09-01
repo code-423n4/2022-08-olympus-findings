@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "hansfriese",
+  "address": "0xf2dcb1d3b7091dcf2ce87ad115377c108ebe6dd4",
+  "risk": "2",
+  "title": "`Operator.swap()` doesn't support fee-on-transfer tokens.",
+  "issueId": 383,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/383"
+}
