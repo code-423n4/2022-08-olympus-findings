@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "ajtra",
+  "address": "0x566f8a91a57d915c44f66cc3ee715b657455c095",
+  "risk": "3",
+  "title": "ERC20 return value not checked and not compatible with tokens like USDT, OMG, etc",
+  "issueId": 314,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/314"
+}
