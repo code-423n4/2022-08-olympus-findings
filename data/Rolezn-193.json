@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "Rolezn",
+  "address": "0xf6850e8f677d320159bb8c84f40dd136d03a2ebb",
+  "risk": "2",
+  "title": "Missing Non Reentrancy Modifiers",
+  "issueId": 193,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/193"
+}
