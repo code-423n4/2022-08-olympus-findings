@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "sorrynotsorry",
+  "address": "0x6262f720679c04cc7f2a14c0c03486d0287c4853",
+  "risk": "3",
+  "title": "Non-standard/Malicious token transfers may cause loans not to be paid.",
+  "issueId": 240,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/240"
+}
