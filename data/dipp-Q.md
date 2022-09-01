@@ -176,7 +176,7 @@ Not allowing ```inputAmount == 0``` will not solve the entire problem since any 
 
 
 
-# [N-01] Unable to revoke endorsements
+# [L-05] Unable to revoke endorsements
 
 ## Line References
 
@@ -188,7 +188,7 @@ In ```Governance.sol```, users are able to endorse proposals with their balance 
 
 ## Impact
 
-If a user calls ```endorseProposal``` on the wrong proposal or realizes that they do not support the  validity of the proposal, they are unable to revoke their endorsement.
+If a user calls ```endorseProposal``` on the wrong proposal or realizes that they do not support the  validity of the proposal, they are unable to revoke their endorsement. Since it is possible to endorse more than 1 proposal at a time, it is likely that users could endorse the wrong proposal.
 
 ## Proof of Concept
 
@@ -216,6 +216,8 @@ If a user calls ```endorseProposal``` on the wrong proposal or realizes that the
         emit ProposalEndorsed(proposalId_, msg.sender, userVotes);
     }
 ```
+
+The code above shows that in order to change a contribution to an endorsement, the user's balance must have changed since their previous call to ```endorseProposal```.
 
 ## Recommended Mitigation Steps
 
