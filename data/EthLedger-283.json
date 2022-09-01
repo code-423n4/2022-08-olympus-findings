@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "EthLedger",
+  "address": "0x954411c24db597aa34f9017f6affc9e7a6a563f6",
+  "risk": "G",
+  "title": "Gas Optimizations",
+  "issueId": 283,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/283"
+}
