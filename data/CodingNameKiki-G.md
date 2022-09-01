@@ -34,3 +34,20 @@ https://github.com/code-423n4/2022-08-olympus/blob/b5e139d732eb4c07102f149fb9426
 a) There is one arithmetic operation that can be unchecked showed below, the _scalefactor equals 10 to the power of the exponent, since in the if statement the exponent can't be greater than the number 38, (10 to the power of 38 isn't greater than 2**256 -1 ) so it can be declared as unchecked, since there is no risk to overflow.
 (Before) 91: _scaleFactor = 10**exponent;
 (After) 91: unchecked { _scaleFactor = 10**exponent; }
+
+2. There is no need to declare variables with their default value:
+
+1.uint: 0
+2.bool: false
+3.address: address(0)
+
+src/utils/KernelUtils.sol
+(Before) 43: for (uint256 i = 0; i < 5; ) {
+(After) 43: for (uint256 i; i < 5; ) {
+
+(Before) 58: for (uint256 i = 0; i < 32; ) {
+(After) 58: for (uint256 i; i < 32; ) {
+
+src/Kernel.sol
+(Before) 397: for (uint256 i = 0; i < reqLength; ) {
+(After) 397: for (uint256 i; i < reqLength; ) {
