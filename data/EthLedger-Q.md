@@ -13,6 +13,14 @@ https://github.com/code-423n4/2022-08-olympus/blob/main/src/utils/KernelUtils.so
 https://github.com/code-423n4/2022-08-olympus/blob/main/src/utils/KernelUtils.sol#L11
 https://github.com/code-423n4/2022-08-olympus/blob/main/src/utils/KernelUtils.sol#L21
 
+3. Use of block.timestamp()
+
+Instead of using block.timestamp(), It is recommended to use block.number plus an average block time to estimate times, as this is less easily manipulated by miners:
+
+https://github.com/code-423n4/2022-08-olympus/blob/main/src/modules/PRICE.sol#L165
+https://github.com/code-423n4/2022-08-olympus/blob/main/src/modules/PRICE.sol#L171
+https://github.com/code-423n4/2022-08-olympus/blob/main/src/modules/PRICE.sol#L215
+
 Non-Critical Findings:
 
 1. use only uppercase letters for constant variables
