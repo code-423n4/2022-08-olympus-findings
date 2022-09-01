@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "Czar102",
+  "address": "0x52cac9f2df3068107c95db3acf3f6b1256d75e45",
+  "risk": "2",
+  "title": "Treasury module is vulnerable to cross-contract reentrancy",
+  "issueId": 426,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/426"
+}
