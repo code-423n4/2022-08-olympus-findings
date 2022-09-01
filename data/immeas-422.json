@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "immeas",
+  "address": "0x89a6da332b75152a8a98aa4869d2dbe3d00d3ff9",
+  "risk": "2",
+  "title": "low market bonds/swaps not working after loan is taken from treasury",
+  "issueId": 422,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/422"
+}
