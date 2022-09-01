@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "karanctf",
+  "address": "0xc7791d7b5eef26cda88504c3032fc7af4e226d11",
+  "risk": "G",
+  "title": "Gas Optimizations",
+  "issueId": 310,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/310"
+}
