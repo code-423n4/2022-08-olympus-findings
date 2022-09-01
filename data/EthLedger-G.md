@@ -5,3 +5,4 @@ Gas Optimizations:
 https://github.com/code-423n4/2022-08-olympus/blob/main/src/policies/Operator.sol#L488
 https://github.com/code-423n4/2022-08-olympus/blob/main/src/policies/Operator.sol#L675
 https://github.com/code-423n4/2022-08-olympus/blob/main/src/policies/Operator.sol#L686
+https://github.com/code-423n4/2022-08-olympus/blob/main/src/policies/Operator.sol#L691
