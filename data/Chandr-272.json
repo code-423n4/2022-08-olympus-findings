@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "Chandr",
+  "address": "0xf99774a96186c52cb6d917b57f926a32c61fa0f0",
+  "risk": "2",
+  "title": "Unchecked transfer",
+  "issueId": 272,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/272"
+}
