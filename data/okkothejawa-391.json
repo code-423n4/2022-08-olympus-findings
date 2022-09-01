@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "okkothejawa",
+  "address": "0xb2fbcf2fb1eb86464d60f04bed4065404cd67e18",
+  "risk": "2",
+  "title": "Inconsistency in staleness checks between OHM and reserve token oracles",
+  "issueId": 391,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/391"
+}
