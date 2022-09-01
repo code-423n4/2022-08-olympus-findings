@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "yixxas",
+  "address": "0x9079426b034c524ebd6cac9cb78dbe8cb0749f4e",
+  "risk": "2",
+  "title": "function _checkApproval has unexpected side effects.",
+  "issueId": 231,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/231"
+}
