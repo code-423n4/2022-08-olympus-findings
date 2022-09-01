@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "rbserver",
+  "address": "0x4bd9605a3e546f3400df2c2be7b1c775aeea56bd",
+  "risk": "G",
+  "title": "Gas Optimizations",
+  "issueId": 491,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/491"
+}
