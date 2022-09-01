@@ -9,10 +9,11 @@ In complex projects such as Defi, the interpretation of all functions and their 
 https://docs.soliditylang.org/en/v0.8.15/natspec-format.html
 
 **Recommendation:**
-[TRSRY.sol#L63-L72](https://github.com/code-423n4/2022-08-olympus/blob/main/src/modules/TRSRY.sol#L63-L72)
+NatSpec comments should be increased in Contracts
 
 There are many missing NatSpecs throughout the project, if we sample 1 of them
 Current Code:
+[TRSRY.sol#L63-L72](https://github.com/code-423n4/2022-08-olympus/blob/main/src/modules/TRSRY.sol#L63-L72)
 ```js
  /// @notice Sets approval for specific withdrawer addresses
     function setApprovalFor(
@@ -112,11 +113,9 @@ Add Event-Emit
 **Context:**
 [Heart.sol#L111-L113](https://github.com/code-423n4/2022-08-olympus/blob/main/src/policies/Heart.sol#L111-L113)
 
-**Description:**
+**Recommendation:**
 Add to indexed parameter for countable Events
 
-**Recommendation:**
-Add Event-Emit
 
 
 ## L-5. There is no need to cast a variable that is already an address, such as address(x)
@@ -129,10 +128,11 @@ Add Event-Emit
 There is no need to cast a variable that is already an address, such as address(auctioneer_), auctioneer also address.
 
 **Recommendation:**
-Add Event-Emit
+Use directly variable
 
 
-## L-6. There is no need to cast a variable that is already an address, such as address(x)
+
+## L-6. Open TODOS
 
 **Context:**
 [Operator.sol#L657](https://github.com/code-423n4/2022-08-olympus/blob/main/src/policies/Operator.sol#L657)
