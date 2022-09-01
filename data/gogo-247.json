@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "gogo",
+  "address": "0x8921d08f3068b3ba08c213eacfb744fbf75388c7",
+  "risk": "2",
+  "title": "Lack of input validation",
+  "issueId": 247,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/247"
+}
