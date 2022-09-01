@@ -16,7 +16,7 @@ Callers of the ```beat``` function will lose out on rewards.
 
 Test code added to ```Heart.t.sol```:
 ```solidity
-	function testResetBeatSetsIncorrectLastBeat() public {
+    function testResetBeatSetsIncorrectLastBeat() public {
         /// Get the beat frequency of the heart and wait that amount of time
         uint256 frequency = heart.frequency();
         vm.warp(block.timestamp + frequency*5);\
@@ -71,6 +71,8 @@ A ```cushionFactor``` value that is too low or too high may lead to unexpected b
     }
 ```
 
+The code above shows how the ```cushionFactor``` is checked in the ```setCushionFactor``` function. None of these checks exist in the constructor.
+
 ## Recommended Mitigation Steps
 
 Use the checks used in ```setCushionFactor``` in the constructor.
@@ -97,7 +99,7 @@ If the ```beat``` function is not called for some time certain values used in th
 Test code added to ```Heart.t.sol```:
 
 ```solidity
-	function testCannotBeatIfNoRewards() public {
+    function testCannotBeatIfNoRewards() public {
         /// Get the beat frequency of the heart and wait that amount of time
         uint256 frequency = heart.frequency();
         vm.warp(block.timestamp + frequency);
@@ -118,6 +120,59 @@ The test code above shows that after the contract is drained of reward tokens (`
 ## Recommended Mitigation Steps
 
 Consider allowing the ```beat``` function to be called when there is no reward tokens in the contract. This could be done by adding a parameter to the function to indicate if the caller would like to receive the reward. If not, the ```_issueReward``` function would not be called in ```beat``` and can be successfully called without issuing rewards.
+
+
+
+
+
+# [L-04] ```callback``` function does not check that ```inputAmount``` correctly corresponds to ```outputAmount```
+
+## Line References
+
+[BondCallback.sol#L100-L148](https://github.com/code-423n4/2022-08-olympus/blob/main/src/policies/BondCallback.sol#L100-L148)
+
+## Description
+
+The ```callback``` function in ```BondCallback.sol``` is called during bond purchases through a teller contract. The ```callback``` function will send payout tokens back to the teller/caller based on the ```inputAmount``` and ```outputAmount``` given. 
+
+The function checks that an amount of quote tokens has been sent by checking that the current balance of the contract is more than or equal to the previous balance + the ```inputAmount```. If the ```inputAmount``` is zero and the ```outputAmount``` is non-zero then the function does not fail and sends payout tokens to the teller.
+
+## Impact
+
+If, on the teller's side,  the ```inputAmount``` and ```outputAmount``` sent to the ```callback``` function is fully user controlled then may receive more funds from than what they are owed. The funds loss would be limited to the capacity of the market.
+
+Exploitability is not very likely since the whitelisted teller function would need to have vulnerable code which would allow a malicious user to call ```callback``` with 0 ```inputAmount``` and non-zero ```outputAmount```. 
+
+## Proof of Concept
+
+Test Code added to ```BondCallback.t.sol```:
+
+```solidity
+    function testCallbackCallableWith0InputAmount() public {
+        /// Record balance
+        uint256 startBalance = ohm.balanceOf(address(teller));
+
+        /// Calls callback without sending any tokens
+        vm.prank(address(teller));
+        callback.callback(regBond, 0, 10);
+
+        /// Teller receiver payout token (OHM)
+        assertEq(ohm.balanceOf(address(teller)) - startBalance, 10);
+
+        /// Callback does not receive quote tokens
+        assertEq(reserve.balanceOf(address(callback)), 0);
+    }
+```
+
+The test code above shows how a teller is able to call the ```callback``` function without first sending quote tokens and setting ```inputAmount == 0``` and ```outputAmount == 10```. The teller receives 10 payout tokens for sending 0 quote tokens.
+
+## Recommended Mitigation Steps
+
+The ```inputAmount``` should be checked for 0 value.
+
+Not allowing ```inputAmount == 0``` will not solve the entire problem since any ```outputAmount``` may be chosen for any ```inputAmount``` as long as the balances check in the ```callback``` function passes. Checking that the ```outputAmount``` corresponds with the ```inputAmount``` should be implemented in the ```callback``` function to ensure the values are correct.
+
+
 
 
 
