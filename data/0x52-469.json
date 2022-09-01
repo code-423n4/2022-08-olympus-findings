@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "0x52",
+  "address": "0x522dffc539c264a8f7e0b91102e899b33f4dabc3",
+  "risk": "2",
+  "title": "Operator.sol bond markets will stop functioning if price becomes greater than 10 ** (decimals * 2)",
+  "issueId": 469,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/469"
+}
