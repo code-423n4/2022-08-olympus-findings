@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "pashov",
+  "address": "0x1797c3bcebf8c858a916fcbbd0359f65f5484915",
+  "risk": "3",
+  "title": "Incomplete price validation for Chainlink’s latestRoundData in PRICE.sol can lead to zero or stale price used in the protocol",
+  "issueId": 416,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/416"
+}
