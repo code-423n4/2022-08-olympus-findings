@@ -1,0 +1,9 @@
+{
+  "contest": 156,
+  "handle": "RagnaChris",
+  "address": "0xe10c869e7a625dc303adbb45a7e04ab20a21006f",
+  "risk": "2",
+  "title": "`callback()` may result of token being stolen",
+  "issueId": 285,
+  "issueUrl": "https://github.com/code-423n4/2022-08-olympus-findings/issues/285"
+}
