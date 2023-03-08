@@ -1,3 +1,11 @@
+---
+sponsor: "Olympus DAO"
+slug: "2022-08-olympus"
+date: "2022-10-26"
+title: "Olympus DAO contest"
+findings: "https://github.com/code-423n4/2022-08-olympus-findings/issues"
+contest: 156
+---
 
 # Overview
 
